@@ -6,8 +6,39 @@ body {
     line-height: 1.6;
 }
 
+/* Cabeçalho fixo */
+header {
+    background-color: #c94f7c;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd2e2;
+}
+
+/* Espaço para não esconder o conteúdo atrás do cabeçalho */
 section {
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
     max-width: 900px;
     margin: auto;
     background: #fff;
@@ -38,10 +69,9 @@ p {
     max-width: 250px;
     border-radius: 10px;
     border: 2px solid #c94f7c;
-    transition: transform 0.3s ease; /* efeito suave */
+    transition: transform 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .img img:hover {
-    transform: scale(1.1); /* aumenta 10% */
+    transform: scale(1.1);
 }
