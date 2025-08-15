@@ -38,4 +38,10 @@ p {
     max-width: 250px;
     border-radius: 10px;
     border: 2px solid #c94f7c;
+    transition: transform 0.3s ease; /* efeito suave */
+}
+
+/* Efeito ao passar o mouse */
+.img img:hover {
+    transform: scale(1.1); /* aumenta 10% */
 }
